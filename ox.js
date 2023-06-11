@@ -1,15 +1,20 @@
 
-function plan(){
-    alert ("get ready for some fun!");
-    alert ("ready")
-    alert ("steady")
-    alert ("go")
-    }
-    plan();
+function confirm(){
+    prompt ("Are you ready for some fun!");
+    if("yes"){
+alert("Great lets go!!!")
+}
+    
+ }
+    confirm();
+
+
+
 
     let currentPlayer= "O";
+    let won = false;
     function place(box){
-        if(box.innerText !="") return;
+        if(box.innerText !="" || won) return;
         box.innerText = currentPlayer;
         currentPlayer == "O" ? currentPlayer = "X" : currentPlayer = "O";
         checkGameBoard();
@@ -24,6 +29,7 @@ function plan(){
             if(first == "") continue;
                 if(first == second && first == third){
                     alert ("Winner!!!!");
+                    won = true
             }
         }
     
@@ -34,6 +40,7 @@ function plan(){
             if(first =="") continue;
                 if(first == second && first == third) {
                 alert ("Winner!!!!");
+                won = true
             }
         }
 
@@ -42,6 +49,7 @@ function plan(){
             let thirdD1 = document.getElementById("2_2").innerText;
             if(firstD1 != "" && firstD1 == secondD1 && firstD1 == thirdD1) {
                 alert ("WINNER!!!!");
+                won = true
             }
 
             let firstD2 = document.getElementById("0_2").innerText;
@@ -49,5 +57,10 @@ function plan(){
             let thirdD2 = document.getElementById("2_0").innerText;
             if(firstD2 != "" && firstD2 == secondD2 && firstD2 == thirdD2){
                 alert ("WINNER!!!!");
+                won = true
             }
-        }
+
+
+}
+
+        
