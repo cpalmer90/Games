@@ -4,18 +4,26 @@ body {
     margin: 0 auto;
     padding: 0;
     text-align: center;
-    font-family: monospace;
+    font-family:munro;
   letter-spacing: 0.01em;
   line-height: 1.6;
   font-weight: 300;
-  font-size: large;
+  font-size:larger;
+}
+
+
+
+@font-face {
+  font-family:munro;
+  src: url(munro.ttf);
 }
 
 .border {
     border-width:3px;
     border-style:solid;
-    border-color:#ffffff;
+    border-color:#ff5e00;
     border-width: 0.1cm;
+    margin-top: 5px;
 }
 
 section {
@@ -25,7 +33,7 @@ section {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-    
+  
 }
 
 
@@ -70,3 +78,8 @@ section {
     -ms-transform: translate(-50%, -50%);
 }
 
+
+  h1,h2 {
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 2px rgb(255, 136, 0), 0 0 25px rgb(255, 94, 0), 0 0 5px rgb(255, 40, 40);
+  }

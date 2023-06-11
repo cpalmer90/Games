@@ -17,7 +17,7 @@ clear: both;
         }
 </style>
 
-<link rel="oxstyle" href="oxstyle.css"/>
+<!-- <link rel="stylesheet" href="indexstyle.css"/> -->
 <script src="ox.js"> </script>
 
 
@@ -33,16 +33,7 @@ clear: both;
      The player who succeeds in placing three of their marks in a horizontal, vertical, <br>
      or diagonal row is the winner. It is a solved game, with a forced draw assuming best play from both players.</p><br>
 
-     <p>The different names of the game are more recent. <br>
-        The first print reference to "noughts and crosses" (nought being an alternative word for 'zero'), the British name,<br>
-         appeared in 1858, in an issue of Notes and Queries.<br>
-          The first print reference to a game called "tick-tack-toe" occurred in 1884,<br>
-           but referred to "a children's game played on a slate, <br>
-           consisting of trying with the eyes shut to bring the pencil down on one of the numbers of a set,
-            the number hit being scored".
-            "Tic-tac-toe" may also derive from "tick-tack", <br>
-            the name of an old version of backgammon first described in 1558. 
-            The US renaming of "noughts and crosses" to "tic-tac-toe" occurred in the 20th century.</p>
+
     </section>
 
 
@@ -50,22 +41,21 @@ clear: both;
 
     <div>
         <div class="row">
-            <div></div>
-            <div></div>
-            <div></div>
+            <div id="0_0" onclick="place(this)"></div>
+            <div id="1_0" onclick="place(this)"></div>
+            <div id="2_0" onclick="place(this)"></div>
     </div>
     <div>
         <div class="row">
-            <div></div>
-            <div></div>
-            <div></div>
+            <div id="0_1" onclick="place(this)"></div>
+            <div id="1_1" onclick="place(this)"></div>
+            <div id="1_2" onclick="place(this)"></div>
     </div>
     <div>
         <div class="row">
-            <div></div>
-            <div></div>
-            <div></div>
+            <div id= "0_2" onclick="place(this)"></div>
+            <div id= "1_2" onclick="place(this)"></div>
+            <div id= "2_2" onclick="place(this)"></div>
     </div>
-
 </body>
 </html>
