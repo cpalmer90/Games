@@ -1,85 +1,90 @@
+* {
+  font-family: munro;
+}
+
 body {
-    background-image: url("https://i.pinimg.com/originals/78/5f/ae/785faebc80b47844dabd4d35aa3eca88.png");
-   background-repeat: no-repeat;
-    margin: 0 auto;
-    padding: 0;
-    text-align: center;
-    font-family:munro;
+  /* background-image: url("https://i.pinimg.com/originals/78/5f/ae/785faebc80b47844dabd4d35aa3eca88.png"); */
+  background-image: url("pxfuel.jpg");
+  background-repeat: repeat-y;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  font-family: munro;
   letter-spacing: 0.01em;
   line-height: 1.6;
   font-weight: 300;
-  font-size:larger;
+  font-size: larger;
+  color: #00ff66;
 }
 
-
-
 @font-face {
-  font-family:munro;
+  font-family: munro;
   src: url(munro.ttf);
 }
 
 .border {
-    border-width:3px;
-    border-style:solid;
-    border-color:#ff5e00;
-    border-width: 0.1cm;
-    margin-top: 5px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #00ff66;
+  border-width: 0.1cm;
+  margin-top: 5px;
 }
 
 section {
-
-    opacity: 0.4;
-    background-color: azure;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  
+  background-color: #282828;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  color: #00ff66;
 }
 
-
-.container {
-    position: relative;
-    width: 50%;
-  }
-  
-  .image {
-    display: block;
-    width: 200px;
-    height: auto;
-
-  }
-  
-  .overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #000000;
-    overflow: hidden;
-    width: 200px;
-    height: 0;
-    transition: .5s ease;
-  }
-  
-  .container:hover .overlay {
-    height: 100%;
-    
-  }
-  
-  .text {
-    white-space: nowrap; 
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    overflow: hidden;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+h1,
+h2 {
+  color: rgb(0, 0, 0);
+  text-shadow: 1px 1px 2px #66ff66, 0 0 25px #00ff33, 0 0 5px #33ff00;
 }
 
+.dropbtn {
+  background-color: #282828;
+  color: #00ff66;
+  padding: 16px;
+  font-size: 16px;
+}
 
-  h1,h2 {
-    color: rgb(0, 0, 0);
-    text-shadow: 1px 1px 2px rgb(255, 136, 0), 0 0 25px rgb(255, 94, 0), 0 0 5px rgb(255, 40, 40);
-  }
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #282828;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #00ff66;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #00ff66;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #00ff66;
+}
+
+img {
+  margin: 0 auto;
+  width: 50%;
+}
