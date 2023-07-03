@@ -73,7 +73,8 @@ h2 {
 }
 
 .dropdown-content a:hover {
-  background-color: #00ff66;
+  background-color: #ffb000;
+  color: #282828;
 }
 
 .dropdown:hover .dropdown-content {
@@ -81,10 +82,15 @@ h2 {
 }
 
 .dropdown:hover .dropbtn {
-  background-color: #00ff66;
+  background-color: #ffb000;
+  color: #282828;
 }
 
 img {
   margin: 0 auto;
   width: 50%;
+}
+
+p {
+  overflow-y: scroll;
 }
