@@ -94,3 +94,17 @@ img {
 p {
   overflow-y: scroll;
 }
+
+table,
+th,
+td {
+  border: 1px solid #00ff66;
+  border-collapse: collapse;
+  justify-content: center;
+  width: 300px;
+}
+
+table {
+  margin-bottom: 1rem;
+  background-color: #282828;
+}

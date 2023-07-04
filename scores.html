@@ -5,18 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HighScores</title>
     <link rel="stylesheet" href="indexstyle.css" />
+    <link rel="konami" href="konami.css" />
   </head>
   <body>
-    <header> <div class="dropdown">
+    <header>
+      <div class="dropdown">
         <button class="dropbtn">Menu</button>
         <div class="dropdown-content">
-            <a href="index.html">Home</a>
+          <a href="index.html">Home</a>
           <a href="snake.html">Snake</a>
-          
-        </div></header>
+        </div>
+      </div>
+    </header>
 
-    <main></main>
+    <main>
+      <section id="score-table">
+        <table>
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Player name</th>
+              <th>Score</th>
+            </tr>
+          </thead>
+        </table>
+      </section>
+      <div>
+        <video id="konami" width="320" height="240">
+          <source
+            src="revive-25a3b90b-5118-4f7b-9564-89ce38486e53.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+    </main>
 
     <footer></footer>
+    <script src="konami.js" ;></script>
+    <script src="scores.js"></script>
   </body>
 </html>

@@ -3,6 +3,96 @@ body {
   background-repeat: repeat-y;
 }
 
+@font-face {
+  font-family: munro;
+  src: url(munro.ttf);
+}
+
 canvas {
   background-color: #282828;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 450px;
+  border: #33ff00 solid 2px;
+}
+
+.button {
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+}
+
+.button a {
+  color: #33ff00;
+  font-family: munro;
+  font-weight: bold;
+  font-size: 36px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #282828;
+  display: block;
+  position: relative;
+  padding: 20px 40px;
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-shadow: 0px 1px 0px #66ff66;
+  filter: dropshadow(color=#282828, offx=0px, offy=1px);
+
+  -webkit-box-shadow: inset 0 1px 0 #ffcc00, 0 10px 0 #66ff66;
+  -moz-box-shadow: inset 0 1px 0 #ffcc00, 0 10px 0 #66ff66;
+  box-shadow: inset 0 1px 0 #ffcc00, 0 10px 0 #66ff66;
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.button a:active {
+  top: 10px;
+  background-color: #282828;
+
+  -webkit-box-shadow: inset 0 1px 0 #ffcc00, inset 0 -3px 0 #66ff66;
+  -moz-box-shadow: inset 0 1px 0 #ffcc00, inset 0 -3pxpx 0 #66ff66;
+  box-shadow: inset 0 1px 0 #ffcc00, inset 0 -3px 0 #66ff66;
+}
+
+.button:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  padding: 4px;
+  position: absolute;
+  bottom: -15px;
+  left: -4px;
+  z-index: -1;
+  background-color: black;
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+#asd {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  size: 10px;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input {
+  margin-bottom: 1 rem;
+  width: 20 rem;
+  padding: 1.5 rem;
+  font-size: 1.8 rem;
+  border: #33ff00 solid 1px;
+  box-shadow: 0.1 rem 1.4 rem #66ff66;
 }

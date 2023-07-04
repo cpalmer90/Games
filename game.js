@@ -1,6 +1,43 @@
 "use strict";
 
-let userName;
+let userName = document.getElementById("username").value;
+
+const container = document.getElementById("container");
+
+const scoreTable = document.getElementById("scores-table");
+
+const start = document.getElementById("start");
+start.onclick = () => {
+  // Here you will add path to local file you have
+  const audio = new Audio("snaketune.mp3");
+
+  audio.play();
+};
+
+// const mostRecentScore = localStorage.getItem("game.score");
+const highscores = JSON.parse(localStorage.getItem("highscores")) || [];
+const updateHighScores = function () {
+  localStorage.setItem("highscores", JSON.stringify(highscores));
+};
+
+// currently brings up score on page
+document.getElementById("saveScoreBtn").addEventListener("click", display);
+const saveHighScore = (event) => {
+  event.preventDefault();
+};
+
+function display() {
+  userName = document.getElementById("username").value;
+  document.getElementById("displayName").innerHTML = userName;
+  document.getElementById("displayScore").innerHTML = game.score;
+  const player = new Player(userName, game.score);
+  highscores.push(player);
+  updateHighScores();
+}
+
+const Player = function (name, score) {
+  (this.score = score), (this.name = name);
+};
 
 let game = {
   tickNumber: 0,
@@ -29,8 +66,7 @@ let game = {
     }
     let result = snake.move();
     if (result == "gameover") {
-      userName = prompt("Game Over Please Enter your name");
-      alert(userName + " your score was " + game.score);
+      alert("Game Over!");
       return;
     }
 
@@ -174,4 +210,5 @@ let gameControl = {
   },
 };
 
-gameControl.startGame();
+// gameControl.startGame();
+start.addEventListener("click", gameControl.startGame);
