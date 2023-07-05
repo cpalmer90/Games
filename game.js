@@ -10,7 +10,7 @@ const start = document.getElementById("start");
 start.onclick = () => {
   // Here you will add path to local file you have
   const audio = new Audio("snaketune.mp3");
-
+  audio.loop = true;
   audio.play();
 };
 
@@ -61,14 +61,13 @@ let game = {
   tick: function () {
     window.clearTimeout(game.timer);
     game.tickNumber++;
-    if (game.tickNumber % 10 == 0) {
+    if (game.tickNumber % 9 == 0) {
       game.addRandomFruit();
     }
     let result = snake.move();
-    if (result == "gameover") {
+    if (result === "gameover") {
       alert("Game Over!");
       return;
-      checkHighScore(account.score);
     }
 
     graphics.drawGame();
