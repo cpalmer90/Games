@@ -68,6 +68,7 @@ let game = {
     if (result == "gameover") {
       alert("Game Over!");
       return;
+      checkHighScore(account.score);
     }
 
     graphics.drawGame();

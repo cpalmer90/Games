@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HighScores</title>
     <link rel="stylesheet" href="indexstyle.css" />
-    <link rel="konami" href="konami.css" />
+    <link rel="stylesheet" href="konami.css" />
   </head>
-  <body>
+  <body class="crt">
     <header>
       <div class="dropdown">
         <button class="dropbtn">Menu</button>
@@ -19,7 +19,8 @@
     </header>
 
     <main>
-      <section id="score-table">
+      <section class="border"><h2>HIGH SCORES</h2></section>
+      <section class="border">
         <table>
           <thead>
             <tr>
@@ -28,19 +29,23 @@
               <th>Score</th>
             </tr>
           </thead>
+          <tbody id="score-table">
+            <ol id="”highScores”"></ol>
+          </tbody>
         </table>
       </section>
+
       <div>
-        <video id="konami" width="320" height="240">
+        <video width="320" height="240" id="hidden" class="modal hidden">
           <source
-            src="revive-25a3b90b-5118-4f7b-9564-89ce38486e53.mp4"
+            src="revive-f531a68d-10de-41af-9630-e63406070dc5.mp4"
             type="video/mp4"
           />
         </video>
       </div>
     </main>
 
-    <footer></footer>
+    <footer class="border"><p>Created by Chris Palmer &#169;</p></footer>
     <script src="konami.js" ;></script>
     <script src="scores.js"></script>
   </body>

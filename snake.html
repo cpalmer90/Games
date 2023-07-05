@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="game.css" />
     <link rel="stylesheet" href="indexstyle.css" />
   </head>
-  <body>
+  <body class="crt">
     <header>
       <div class="dropdown">
         <button class="dropbtn">Menu</button>
@@ -27,7 +27,7 @@
               name="username"
               id="username"
               value="Username"
-            /><button
+            /><button class="button"
               type="submit"
               class="saveBtn"
               id="saveScoreBtn"
@@ -38,15 +38,21 @@
           </form>
           <p id="displayName"></p>
           <p id="displayScore"></p>
-          <button id="start">Start</button>
-          <a class="button" href="snake.html">Try again</a>
-          <a class="button" href="scores.html">view highscores</a>
+          
+          <div ontouchstart="">
+            <div class="button" id="buttoncontrols">
+              <a id="start">Start</a>
+          <a  href="snake.html">Try again</a>
+          <a href="scores.html">view highscores</a>
+        </div>  
+        </div>
         </div>
       </div>
 
       <canvas id="canvas" width="450" height="300"> </canvas>
 
       <div ontouchstart="">
+        
         <div class="button">
           <a onclick="">W</a>
         </div>
@@ -56,10 +62,15 @@
           <a onclick="">A</a>
           <a onclick="">S</a>
           <a onclick="">D</a>
+          
         </div>
       </div>
-    </main>
-    <footer></footer>
+      
+   
+  </main>
+  <footer class="border"><p>Created by Chris Palmer &#169;</p></footer>
+
+  
     <script src="game.js"></script>
   </body>
 </html>

@@ -25,6 +25,14 @@ canvas {
   margin: 20px;
 }
 
+#buttoncontrols {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
 .button a {
   color: #33ff00;
   font-family: munro;
@@ -68,7 +76,7 @@ canvas {
   bottom: -15px;
   left: -4px;
   z-index: -1;
-  background-color: black;
+  background-color: black 20%;
 
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
