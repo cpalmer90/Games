@@ -75,7 +75,7 @@ body {
 }
 
 p {
-  color: #ffb000;
+  color: #00ff66;
 }
 
 /* Set the font, lean the board, position it */
@@ -126,6 +126,6 @@ p {
 }
 
 a {
-  color: #00ff66;
+  color: #ffb000;
   background: none;
 }
