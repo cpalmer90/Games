@@ -5,6 +5,8 @@ let userName = document.getElementById("username").value;
 const container = document.getElementById("container");
 
 const scoreTable = document.getElementById("scores-table");
+let img = new Image();
+img.src = "danceface.png";
 
 const start = document.getElementById("start");
 start.onclick = () => {
@@ -71,7 +73,7 @@ let game = {
     }
 
     graphics.drawGame();
-    game.timer = window.setTimeout("game.tick()", 500);
+    game.timer = window.setTimeout("game.tick()", 300);
   },
   addRandomFruit: function () {
     let randomY = Math.floor(Math.random() * game.board.length) + 0;
@@ -140,6 +142,8 @@ let snake = {
 
     if (game.isFruit(location)) {
       snake.parts.unshift(location);
+      const eatingAudio = new Audio("NOM.mp3");
+      eatingAudio.play();
       game.score++;
     }
   },
