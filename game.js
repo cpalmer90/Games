@@ -5,8 +5,6 @@ let userName = document.getElementById("username").value;
 const container = document.getElementById("container");
 
 const scoreTable = document.getElementById("scores-table");
-let img = new Image();
-img.src = "danceface.png";
 
 const start = document.getElementById("start");
 start.onclick = () => {
